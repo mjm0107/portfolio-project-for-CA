@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #103CE7, #64E9FF);
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+}
+
+header, footer {
+    background-color: rgb(143, 34, 165);
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+.email {
+    text-decoration: none;
+}
+
+.email:hover {
+cursor: pointer;
+}
+
+img {
+    border-radius: 50%;
+  max-width: 12%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+h1 {
+    display: flex;
+justify-content: center;
+align-items: stretch;
+}
+
+.aboutme {
+    line-height: 2;
+}
+
+.project {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #003d82;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+  
+    img {
+        max-width: 40%;
+    }
+}
