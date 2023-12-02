@@ -53,18 +53,24 @@ section {
 cursor: pointer;
 }
 
-img {
+.me {
     border-radius: 50%;
   max-width: 12%;
   display: block;
   margin: 0 auto;
 }
 
+.photos {
+    max-width: 50%;
+}
+
+.contactinfo {
+    font-size: 10em;
+}
 
 h1 {
     display: flex;
 justify-content: center;
-align-items: stretch;
 }
 
 .aboutme {
@@ -72,8 +78,10 @@ align-items: stretch;
 }
 
 .project {
+    display: flex;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    flex-flow: column;
 }
 
 .contact-form-container {
